@@ -1,0 +1,560 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 80%;
+}
+/* start nav section */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+nav .nav-link{
+    margin: 0px 10px;
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+nav .nav-link::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+    background-color: white;
+    position: absolute;
+    transition: all 0.5s;
+}
+nav .nav-link.active::before{
+    width: 100%;
+}
+nav .navbar-brand{
+    font-size: 18px;
+}
+nav .navbar-nav .nav-link.active,nav .navbar-nav .nav-link.show{
+    color: white;
+}
+nav .nav-link:focus,nav .nav-link:hover{
+    color: white;
+}
+/* end nav section */
+/* start home section */
+#home{
+    background-image: url('../imgs/bg.jpg');
+    background-size: cover;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.content h5{
+    font-size: 50px;
+}
+.content h1{
+    font-size: 60px;
+}
+#home .icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.content span::after{
+    content:"|";
+    animation-name: typing;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    0% {content:"|";}
+    1% {content:"D|";}
+    2% {content:"De|";}
+    4% {content:"Des|";}
+    5% {content:"Desi|";}
+    6% {content:"Desig|";}
+    7% {content:"Design|";}
+    8% {content:"Designe|";}
+    9% {content:"Designer|";}
+    10% {content:"Designe|";}
+    11% {content:"Design|";}
+    12% {content:"Desig|";}
+    13% {content:"Desi|";}
+    14% {content:"Des|";}
+    15% {content:"De|";}
+    16% {content:"D|";}
+    17% {content:"L|";}
+    18% {content:"La|";}
+    19% {content:"Lar|";}
+    20% {content:"Larr|";}
+    21% {content:"Larry|";}
+    22% {content:"Larry |";}
+    23% {content:"Larry D|";}
+    24% {content:"Larry Da|";}
+    25% {content:"Larry Dan|";}
+    26% {content:"Larry Dani|";}
+    27% {content:"Larry Danie|";}
+    28% {content:"Larry Daniel|";}
+    29% {content:"Larry Daniels|";}
+    30% {content:"Larry Daniel|";}
+    31% {content:"Larry Danie|";}
+    32% {content:"Larry Dani|";}
+    33% {content:"Larry Dan|";}
+    34% {content:"Larry D|";}
+    35% {content:"Larry |";}
+    36% {content:"Larry|";}
+    37% {content:"Larr|";}
+    38% {content:"Lar|";}
+    39% {content:"La|";}
+    40% {content:"L|";}
+    41% {content:"D|";}
+    42% {content:"De|";}
+    43% {content:"Dev|";}
+    44% {content:"Deve|";}
+    45% {content:"Devel|";}
+    46% {content:"Develo|";}
+    47% {content:"Develop|";}
+    48% {content:"Develope|";}
+    49% {content:"Developer|";}
+    50% {content:"Develope|";}
+    51% {content:"Develop|";}
+    52% {content:"Develo|";}
+    53% {content:"Devel|";}
+    54% {content:"Deve|";}
+    55% {content:"Dev|";}
+    56% {content:"De|";}
+    57% {content:"D|";}
+    58% {content:"L|";}
+    60% {content:"La|";}
+    61% {content:"Lar|";}
+    62% {content:"Larr|";}
+    63% {content:"Larry|";}
+    64% {content:"Larry |";}
+    65% {content:"Larry D|";}
+    66% {content:"Larry Da|";}
+    67% {content:"Larry Dan|";}
+    68% {content:"Larry Dani|";}
+    69% {content:"Larry Danie|";}
+    70% {content:"Larry Daniel|";}
+    71% {content:"Larry Daniels|";}
+    72% {content:"Larry Daniels.|";}
+    73% {content:"Larry Daniel|";}
+    74% {content:"Larry Danie|";}
+    75% {content:"Larry Dani|";}
+    76% {content:"Larry Dan|";}
+    77% {content:"Larry D|";}
+    78% {content:"Larry |";}
+    79% {content:"Larry|";}
+    80% {content:"Larr|";}
+    81% {content:"Lar|";}
+    82% {content:"La|";}
+    83% {content:"L|";}
+    84% {content:"D|";}
+    85% {content:"De|";}
+    86% {content:"Dev|";}
+    87% {content:"Deve|";}
+    88% {content:"Devel|";}
+    89% {content:"Develo|";}
+    90% {content:"Develop|";}
+    91% {content:"Develope|";}
+    92% {content:"Developer|";}
+    93% {content:"Develope|";}
+    94% {content:"Develop|";}
+    95% {content:"Develo|";}
+    96% {content:"Devel|";}
+    97% {content:"Deve|";}
+    98% {content:"Dev|";}
+    99% {content:"De|";}
+    100% {content:"D|";}
+}
+/* start about section */
+#about{
+    padding: 100px 0;
+}
+button.btn-1{
+    border: 1px solid#1c1c1c;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: #1c1c1c;
+    font-size: 13px;
+    color: white;
+    transition: all 0.5s ;
+}
+button:hover.btn-1{
+    background-color: white;
+    color:  black;
+}
+#about button.btn-2{
+    border: 1px solid#1c1c1c;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: white;
+    font-size: 13px;
+    transition: all 0.5s ;
+}
+#about button:hover.btn-2{
+    background-color: #1c1c1c;
+    color: white;
+}
+#about .img-about::after{
+    content: '';
+    width: 80%;
+    height: 70%;
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat;
+    position: absolute;
+    z-index: -1;
+    bottom: -29px;
+    left: -5px;
+}
+.progress{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 25px;
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);
+}
+.pro-1{
+    height: 25px;
+    width: 90%;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+.pro-2{
+    height: 25px;
+    width: 80%;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+.pro-3{
+    height: 25px;
+    width: 85%;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+.progress h6{
+  padding-top: 4px;
+  padding-left: 12px;
+    color: white;
+}
+.por-font{
+    font-size: 30px;
+}
+/* end about section */
+/* start service section */
+#service{
+    background-color: #F7F7F7;
+    padding-bottom: 100px;
+}
+#service .service-head{
+    z-index: 3;
+}
+.service-head h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.service-head h3{
+font-weight: 900;
+font-size: 40px;
+position: relative;
+display: inline-block;
+}
+.ser-fnt{
+    padding-top: 100px;
+    font-size: 40px;
+}
+.icon-2{
+    transition: all 0.5s;
+}
+.content-service{
+    box-shadow:  0px 10px 30px -8px rgba(0, 0, 0, 0.1);;
+}
+.content-service:hover .icon-2{
+    background-color: #1c1c1c;
+    color: white;
+}
+.fnt{
+    font-size: 18px;
+}
+.icon-2{
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #F7F7F7;
+    background-color: #F7F7F7;
+}
+/* end service section */
+/* start portfolio section */
+#portfolio{
+    padding: 100px 0;
+}
+#portfolio .portfolio-hero{
+    z-index: 3;
+}
+.portfolio-hero h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.portfolio-hero h3{
+font-weight: 900;
+font-size: 40px;
+position: relative;
+display: inline-block;
+}
+.por-fnt{
+    font-size: 40px;
+}
+#portfolio .nav-link {
+    border: none;
+    color: black;
+    font-size: 16px;
+}
+#portfolio .nav-link.active::before{
+    width: 100%;
+}
+#portfolio .nav-link::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+   bottom: -1px;
+   left: 50%;
+   transform: translateX(-50%);
+    background-color: black;
+    position: absolute;
+    transition: all 0.5s;
+}
+#portfolio .nav-link:hover::after{
+    width: 100%;
+}
+#portfolio .nav-link.active::after{
+    width: 100%;
+}
+.info-portfolio{
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 10px solid #F5F5F5 ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 100px 50px;
+    opacity: 0;
+    transition: all 0.4s 0.2s;
+}
+.info-portfolio{
+    top: 5%;
+}
+.content-portfolio:hover .info-portfolio{
+    opacity: 1;
+    top: 0;
+}
+.content-portfolio{
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.icon-portfolio{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    background-color:black;
+    color: white;
+}
+.icon-ho:hover .icon-portfolio{
+    background-color: white;
+    color: black;
+}
+.por{
+    font-size: 14px;
+}
+/* end portfolio section */
+/* start work section */
+#work{
+    padding: 100px 0;
+    background-color: #F7F7F7;
+}
+#work .work-head{
+    z-index: 3;
+}
+.contant-work img{
+    width: 90px;
+    height: 90px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+}
+.work-head h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.work-head h3{
+font-weight: 900;
+font-size: 40px;
+position: relative;
+display: inline-block;
+}
+/* end work section */
+/* start client section */
+#client{
+    padding-bottom: 100px;
+}
+.cli-{
+    font-size: 30px;
+}
+/* end client section */
+/* start team section */
+#team{
+    background-color: #F7F7F7;
+    padding: 100px 0;
+}
+.team-text{
+    background-color: #5B5B5B;
+    color: white;
+    border-radius:0 0 10px 10px;
+}
+.icon-team{
+    background-color: white;
+    position: absolute;
+    width: 96%;
+    height: 96%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s 0.1s ;
+}
+#team .icon-team{
+    border: 20px solid transparent;
+}
+.team-img img{
+    transition: all 0.5s ;
+}
+.team-img .icon-team{
+    transition: all 0.9s;
+}
+.team-img:hover img{
+    transform: scale(1.2);
+}
+.team-img:hover .icon-team{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+#team .col-md-6:hover .icon-team{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+.team-text:hover .team-img .icon-team{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+#team .icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+#team .icon-teamgro:hover .icon{
+    background-color: white;
+    color: black;
+}
+#team .team-head{
+    z-index: 3;
+}
+.team-head h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.team-head h3{
+font-weight: 900;
+font-size: 40px;
+position: relative;
+display: inline-block;
+}
+/* end team section */
+
+/* start contact section */
+#contact{
+    padding-top: 100px ;
+}
+.contact-head h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.contact-head h3{
+font-weight: 900;
+font-size: 40px;
+position: relative;
+display: inline-block;
+}
+#contact p{
+    font-size: 15px;
+}
+.contact-hov:hover .icon-2{
+    background-color: #1c1c1c;
+    color: white;
+}
+.contact-info{
+    background-color: #1c1c1c;
+    color: white;
+    height: 90px;
+    font-size: 13px;
+}
+#contact .para{
+    font-size: 13px;
+}
+.contact-hov p{
+    font-size: 15px;
+}
+.form-control{
+    background-color: #F4F4F4;
+}
+textarea{
+    height: 160px;
+}
+/* start end section */
+
